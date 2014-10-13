@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="GitLab_for_Windows_Phone.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GitLab_for_Windows_Phone.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Background>
+        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
+    </Page.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/img/gitlab-heads.png"
+                        Opacity="0.1"/>
+        </Grid.Background>
+
+        <StackPanel VerticalAlignment="Top"
+                    Margin="0,100,0,0">
+            <TextBlock Text="GitLab" 
+                       TextAlignment="Center"
+                       FontSize="70"/>
+            <TextBlock Text="for Windows Phone"
+                       TextAlignment="Center"
+                       FontSize="30"
+                       FontWeight="Light"/>
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Center" Margin="20">
+            <TextBox x:Uid="UsernameTextBox" 
+                     Margin="0,30,0,0"/>
+            <PasswordBox x:Uid="PasswordTextBox"  />
+        </StackPanel>
+    </Grid>
+</Page>
