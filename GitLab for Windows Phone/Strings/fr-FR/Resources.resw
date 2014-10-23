@@ -138,6 +138,9 @@
   <data name="HubSection5" xml:space="preserve">
     <value>SECTION 5</value>
   </data>
+  <data name="LoginButton.Content" xml:space="preserve">
+    <value>connexion</value>
+  </data>
   <data name="NavigationFailedExceptionMessage" xml:space="preserve">
     <value>Échec de la navigation.</value>
   </data>

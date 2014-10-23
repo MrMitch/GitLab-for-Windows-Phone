@@ -16,21 +16,22 @@
                         Opacity="0.1"/>
         </Grid.Background>
 
-        <StackPanel VerticalAlignment="Top"
-                    Margin="0,100,0,0">
+        <StackPanel VerticalAlignment="Center" Margin="20,0">
             <TextBlock Text="GitLab" 
                        TextAlignment="Center"
                        FontSize="70"/>
             <TextBlock Text="for Windows Phone"
                        TextAlignment="Center"
                        FontSize="30"
-                       FontWeight="Light"/>
-        </StackPanel>
-
-        <StackPanel VerticalAlignment="Center" Margin="20">
-            <TextBox x:Uid="UsernameTextBox" 
-                     Margin="0,30,0,0"/>
-            <PasswordBox x:Uid="PasswordTextBox"  />
+                       FontWeight="Light"
+                       Margin="0,0,0,30"/>
+            
+            <TextBox x:Uid="ServerAddressTextBox" PlaceholderText="server address"/>
+            <TextBox x:Uid="UsernameTextBox" PlaceholderText="username, email" />
+            <PasswordBox x:Uid="PasswordTextBox" PlaceholderText="password"
+                         IsPasswordRevealButtonEnabled="True"  />
+            <Button x:Uid="LoginButton" Content="Login" 
+                    HorizontalAlignment="Stretch"/>
         </StackPanel>
     </Grid>
 </Page>
