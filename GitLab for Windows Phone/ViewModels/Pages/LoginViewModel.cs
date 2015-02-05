@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GitLab_for_Windows_Phone.Common;
+using GitLab_for_Windows_Phone.Services;
 
 namespace GitLab_for_Windows_Phone.ViewModels.Pages
 {
@@ -16,7 +17,7 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
             set
             {
                 _login = value;
-                GetTokenCommand.RaiseCanExecuteChanged();
+                LoginCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -27,23 +28,27 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
             set
             {
                 _password = value;
-                GetTokenCommand.RaiseCanExecuteChanged();
+                LoginCommand.RaiseCanExecuteChanged();
             }
         }
 
-        private RelayCommand<object> _getTokenCommand;
-        public RelayCommand<object> GetTokenCommand
+        private RelayCommand<object> _loginCommand;
+        public RelayCommand<object> LoginCommand
         {
             get
             {
-                if (_getTokenCommand == null)
+                if (_loginCommand == null)
                 {
-                    return _getTokenCommand = new RelayCommand<object>(
-                        (_) => {},
+                    return _loginCommand = new RelayCommand<object>(
+                        (_) =>
+                        {
+                            // todo
+                            NavigationService.NavigateToRepositoryList();
+                        },
                         () => !String.IsNullOrWhiteSpace(Login) && !String.IsNullOrWhiteSpace(Password)
                     );
                 }
-                return _getTokenCommand;
+                return _loginCommand;
             }
         }
         

@@ -5,7 +5,8 @@
     xmlns:local="using:GitLab_for_Windows_Phone.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}">
 
     <Page.Background>
         <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
@@ -26,11 +27,14 @@
                        FontWeight="Light"
                        Margin="0,0,0,30"/>
             
-            <TextBox x:Uid="ServerAddressTextBox" PlaceholderText="server address"/>
-            <TextBox x:Uid="UsernameTextBox" PlaceholderText="username, email" />
+            <TextBox x:Uid="ServerAddressTextBox" PlaceholderText="server address"
+                     Text="{Binding Login, Mode=TwoWay}"/>
+            <TextBox x:Uid="UsernameTextBox" PlaceholderText="username, email" 
+                     Text="{Binding Password, Mode=TwoWay}"/>
             <PasswordBox x:Uid="PasswordTextBox" PlaceholderText="password"
                          IsPasswordRevealButtonEnabled="True"  />
-            <Button x:Uid="LoginButton" Content="Login" 
+            <Button x:Uid="LoginButton" Content="Login"
+                    Command="{Binding LoginCommand}"
                     HorizontalAlignment="Stretch"/>
         </StackPanel>
     </Grid>
