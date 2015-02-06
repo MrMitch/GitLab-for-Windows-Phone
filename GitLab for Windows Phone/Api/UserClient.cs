@@ -11,6 +11,9 @@ namespace GitLab_for_Windows_Phone.Api
             ApiClient = new GitLabApiClient(SettingsHelper.Local["server"].ToString(), SettingsHelper.Local["token"].ToString());
         }
 
-        public Session
+        public Session GetToken()
+        {
+            
+        }
     }
 }
