@@ -43,7 +43,7 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
                         (_) =>
                         {
                             // todo
-                            NavigationService.NavigateToRepositoryList();
+                            NavigationService.NavigateToHome();
                         },
                         () => !String.IsNullOrWhiteSpace(Login) && !String.IsNullOrWhiteSpace(Password)
                     );

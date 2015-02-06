@@ -34,9 +34,9 @@ namespace GitLab_for_Windows_Phone.Services
             Service = new NavigationService(frame);
         }
 
-        public static bool NavigateToRepositoryList()
+        public static bool NavigateToHome()
         {
-            return Service.Frame.Navigate(typeof (RepositoryList));
+            return Service.Frame.Navigate(typeof (HomePage));
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="GitLab_for_Windows_Phone.Views.RepositoryList"
+    x:Class="GitLab_for_Windows_Phone.Views.HomePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GitLab_for_Windows_Phone.Views"
@@ -31,7 +31,7 @@
             <Setter Property="Margin" Value="{ThemeResource ListViewItemMargin}"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
             <Setter Property="VerticalContentAlignment" Value="Top"/>
-            <Setter Property="Padding" Value="30,5" />
+            <Setter Property="Padding" Value="30,0" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ListViewItem">
