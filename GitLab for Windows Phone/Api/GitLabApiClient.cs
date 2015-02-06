@@ -16,7 +16,7 @@ namespace GitLab_for_Windows_Phone.Api
 
         public GitLabApiClient(string serverAddress, string token)
         {
-            ServerAddress = serverAddress;
+            ServerAddress = serverAddress.TrimEnd('/') + "/api/v3/";
             Token = token;
         }
 

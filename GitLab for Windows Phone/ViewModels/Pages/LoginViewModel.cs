@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Web.Http;
 using GitLab_for_Windows_Phone.Common;
 using GitLab_for_Windows_Phone.Services;
 
@@ -32,6 +33,17 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
             }
         }
 
+        private string _serverAddress;
+        public string ServerAddress
+        {
+            get { return _serverAddress; }
+            set
+            {
+                _serverAddress = value;
+                LoginCommand.RaiseCanExecuteChanged();
+            }
+        }
+
         private RelayCommand<object> _loginCommand;
         public RelayCommand<object> LoginCommand
         {
@@ -42,10 +54,11 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
                     return _loginCommand = new RelayCommand<object>(
                         (_) =>
                         {
-                            // todo
+                            var client = new HttpClient();
+                            client.PostAsync(new Uri(ServerAddress + "/api/v3/sesson"), new HttpStringContent(""));
                             NavigationService.NavigateToHome();
                         },
-                        () => !String.IsNullOrWhiteSpace(Login) && !String.IsNullOrWhiteSpace(Password)
+                        () => !String.IsNullOrWhiteSpace(Login) && !String.IsNullOrWhiteSpace(Password) && !String.IsNullOrWhiteSpace(ServerAddress)
                     );
                 }
                 return _loginCommand;
