@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,41 @@ namespace GitLab_for_Windows_Phone.Models
 {
     public class User
     {
+        [DataMember(Name = "id")]
+        public int Id { get; set; }
+
+        [DataMember(Name = "username")]
+        public string Username { get; set; }
+
+        [DataMember(Name = "email")]
+        public string Email { get; set; }
+
+        [DataMember(Name = "name")]
+        public string Name { get; set; }
+
+        [DataMember(Name = "avatar_url")]
+        public Uri AvatarUri { get; set; }
+
+        [DataMember(Name = "is_admin")]
+        public bool IsAdmin{ get; set; }
+
+        // admin
+
+
+
+        [DataMember(Name = "bio")]
+        public string Bio { get; set; }
+
+        [DataMember(Name = "extern_uid")]
+        public string ExternUid { get; set; }
+
+        [DataMember(Name = "can_create_project")]
+        public bool CanCreateProjet { get; set; }
+
+        [DataMember(Name = "can_create_group")]
+        public bool CanCreateGroup { get; set; }
+
+
         /*
          
         "id": 1,
@@ -30,14 +66,5 @@ namespace GitLab_for_Windows_Phone.Models
         "can_create_group": true
          */
 
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Name { get; set; }
-        public string Bio { get; set; }
-        public string ExternUid { get; set; }
-        public Uri AvatarUri { get; set; }
-        public bool CanCreateProjets { get; set; }
-        public bool CanCreateGroups { get; set; }
     }
 }
