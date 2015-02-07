@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace GitLab_for_Windows_Phone.Models
 {
+    [DataContract]
     public class User
     {
         [DataMember(Name = "id")]

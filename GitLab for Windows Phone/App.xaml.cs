@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // Pour en savoir plus sur le modèle Application Hub, consultez la page http://go.microsoft.com/fwlink/?LinkId=391641
+using GitLab_for_Windows_Phone.Pages;
 using GitLab_for_Windows_Phone.Services;
 
 namespace GitLab_for_Windows_Phone
@@ -107,7 +108,7 @@ namespace GitLab_for_Windows_Phone
                 // Quand la pile de navigation n'est pas restaurée, accédez à la première page,
                 // puis configurez la nouvelle page en transmettant les informations requises en tant que
                 // de navigation.
-                if (!rootFrame.Navigate(typeof(Views.LoginPage), e.Arguments))
+                if (!rootFrame.Navigate(typeof(LoginPage), e.Arguments))
                 {
                     throw new Exception("Failed to create initial page");
                 }

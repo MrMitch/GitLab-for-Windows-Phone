@@ -9,7 +9,7 @@ using GitLab_for_Windows_Phone.Services;
 
 namespace GitLab_for_Windows_Phone.ViewModels.Pages
 {
-    public class LoginViewModel
+    public class LoginPageViewModel
     {
         private string _login;
         public string Login
@@ -55,7 +55,7 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
                         (_) =>
                         {
                             var client = new HttpClient();
-                            client.PostAsync(new Uri(ServerAddress + "/api/v3/sesson"), new HttpStringContent(""));
+                            //client.PostAsync(new Uri(ServerAddress + "/api/v3/sesson"), new HttpStringContent(""));
                             NavigationService.NavigateToHome();
                         },
                         () => !String.IsNullOrWhiteSpace(Login) && !String.IsNullOrWhiteSpace(Password) && !String.IsNullOrWhiteSpace(ServerAddress)

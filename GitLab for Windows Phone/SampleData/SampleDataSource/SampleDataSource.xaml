@@ -1,0 +1,149 @@
+﻿<!--
+      *********    NE PAS MODIFIER CE FICHIER     *********
+      Ce fichier est régénéré par un outil de création.Modifier
+ .     ce fichier peut provoquer des erreurs.
+-->
+<SampleData:SampleDataSource xmlns:SampleData="using:Blend.SampleData.SampleDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <SampleData:SampleDataSource.Groups>
+    <SampleData:Group Property1="Nam aliquam sed" Property2="Cras duis integer" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Aenean mauris nullam" Property2="Maecenas class" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Dis quisque aptent curae" Property2="Vivamus aliquam nunc donec" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Aliquet etiam" Property2="Praesent amet" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Auctor blandit est" Property2="Congue accumsan commodo" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Ante bibendum arcu diam" Property2="Cursus eget" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Elit dictum" Property2="Dictumst conubia" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Eleifend cubilia hac fusce" Property2="Dapibus egestas" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Lectus leo" Property2="Mus nec euismod" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Enim feugiat gravida" Property2="Erat libero non" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Ligula lorem" Property2="Litora per sed" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Iaculis facilisi" Property2="Morbi sem" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Sit lacinia eros" Property2="Nibh nisi nisl" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Faucibus nulla luctus habitant" Property2="Nunc proin" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Augue inceptos vel" Property2="Nam magnis laoreet" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Sed interdum dis" Property2="Mattis est" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Lobortis hac natoque leo" Property2="Odio posuere potenti" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Mus nec non pretium" Property2="Mauris nascetur" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Rhoncus sodales pharetra dolor" Property2="Fames orci" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Pede quam quis" Property2="Viverra per" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Felis mollis" Property2="Sed ipsum placerat pulvinar" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Justo sagittis montes aliquam" Property2="Urna sem nostra sit" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Ornare integer" Property2="Quisque senectus vel cras" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Platea lacus duis nunc" Property2="Vivamus sociosqu" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Primis rutrum" Property2="Suscipit lorem aliquam" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Sapien magna" Property2="Semper aliquet" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Blandit sociis" Property2="Amet nam" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Ante commodo torquent" Property2="Sed dis taciti tellus" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Massa metus conubia" Property2="Tempor morbi" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Neque est netus" Property2="Nulla hac" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Arcu cubilia" Property2="Dapibus leo porta ultrices" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Mus nec vehicula tempus" Property2="Egestas volutpat" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Purus maecenas" Property2="Non risus euismod" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Praesent tortor feugiat" Property2="Velit per gravida" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Diam vitae" Property2="Sed iaculis class" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Accumsan curae donec" Property2="Bibendum sem" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Lacinia etiam dictumst turpis" Property2="Sit eleifend" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Facilisi faucibus habitant" Property2="Vel inceptos laoreet" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Fusce nam interdum lorem" Property2="Lobortis varius eget" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Nascetur natoque" Property2="Aenean sed dis mauris" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Nullam elit est aptent" Property2="Enim auctor erat pharetra" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Placerat posuere" Property2="Morbi eros potenti pretium" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Pulvinar rhoncus" Property2="Sagittis congue" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Hac sodales" Property2="Nulla leo mus viverra" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Senectus sociosqu" Property2="Aliquam nibh" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Nec proin non nisi" Property2="Integer per augue" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Quisque vivamus nisl aliquam" Property2="Cursus aliquet" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Suscipit dictum" Property2="Dolor fames" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Nunc sed" Property2="Torquent felis sem blandit" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Sit vel odio" Property2="Orci lectus nam" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Ipsum commodo" Property2="Pede conubia" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Ultrices vehicula justo libero" Property2="Quam lacus cubilia" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Quis urna" Property2="Volutpat ligula" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Maecenas lorem" Property2="Sed magna massa dapibus" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Cras egestas euismod praesent" Property2="Accumsan bibendum litora dis" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Est luctus" Property2="Dictumst eleifend" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Magnis metus mattis morbi" Property2="Facilisi feugiat hac" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Leo gravida duis" Property2="Iaculis neque" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Mauris mus nunc" Property2="Amet ante lacinia arcu" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Laoreet nec netus non" Property2="Faucibus nulla natoque per" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Habitant inceptos mollis" Property2="Diam interdum posuere" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Porta potenti montes" Property2="Sed purus" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Nostra risus eget velit" Property2="Lobortis sem nascetur vitae" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Elit pretium rhoncus" Property2="Class sodales curae" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Donec sit viverra enim" Property2="Erat ornare" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Vel nam platea" Property2="Sed eros dis est" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Pharetra primis nibh etiam" Property2="Rutrum hac aliquam" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Leo placerat fusce" Property2="Integer lorem pulvinar" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Mus nec sapien morbi" Property2="Nisi nulla quisque vivamus" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Semper sociis taciti tellus" Property2="Nisl tempor" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Proin tempus aliquam nunc" Property2="Non sagittis" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Per sed" Property2="Aliquet sem" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Odio sit orci senectus" Property2="Pede tortor turpis vel" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Blandit augue dolor nam" Property2="Varius quam" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Commodo conubia fames quis" Property2="Felis sed cubilia sociosqu" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Urna ipsum justo" Property2="Aenean dis" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Cras mauris" Property2="Nullam suscipit est duis" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Aptent hac nunc leo" Property2="Torquent auctor mus ultrices" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Congue dapibus vehicula nec" Property2="Lacus volutpat lorem magna" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Massa cursus maecenas dictum" Property2="Egestas amet metus" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Praesent euismod lectus" Property2="Libero morbi neque" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Netus ante" Property2="Nulla porta feugiat" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Non arcu ligula" Property2="Litora purus" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Gravida risus per" Property2="Diam eget" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Elit velit" Property2="Sed luctus magnis accumsan" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Enim sem sit" Property2="Vitae mattis erat iaculis" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Eros class" Property2="Nibh bibendum mauris" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Mollis vel curae donec" Property2="Lacinia montes dictumst" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Nisi laoreet natoque" Property2="Nam sed" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Nisl posuere" Property2="Dis nunc" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Nostra etiam" Property2="Fusce eleifend potenti" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Lorem est odio morbi" Property2="Facilisi hac faucibus ornare" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Nulla orci leo pretium" Property2="Rhoncus proin" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Mus sodales habitant platea" Property2="Augue viverra dolor pede" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Primis nec inceptos quam" Property2="Interdum non rutrum aliquam" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Lobortis nascetur pharetra placerat" Property2="Quis pulvinar urna sagittis" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Integer fames" Property2="Per quisque" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Felis ipsum senectus" Property2="Justo sapien cras" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Sociosqu lacus" Property2="Vivamus suscipit torquent duis" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+    <SampleData:Group Property1="Lorem nunc semper" Property2="Amet sociis aliquam" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png">
+      <SampleData:Group.Items>
+        <SampleData:Item Property1="Ante aliquet sed" Property2="Taciti magna arcu" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Ultrices vehicula diam eget" Property2="Massa volutpat blandit maecenas" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Tellus tempor commodo" Property2="Sem sit metus" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Tempus tortor" Property2="Vel nam sed" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Praesent accumsan" Property2="Conubia turpis bibendum" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+        <SampleData:Item Property1="Elit dis morbi" Property2="Est enim neque" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image01.png" />
+        <SampleData:Item Property1="Cubilia dapibus hac varius" Property2="Aenean mauris leo" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image02.png" />
+        <SampleData:Item Property1="Egestas mus euismod" Property2="Nec dictumst" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image03.png" />
+        <SampleData:Item Property1="Nullam feugiat netus aptent" Property2="Non per" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image04.png" />
+        <SampleData:Item Property1="Sed auctor congue eleifend" Property2="Cursus nulla erat" Property3="ms-appx:/SampleData/SampleDataSource/SampleDataSource_Files/image05.png" />
+      </SampleData:Group.Items>
+    </SampleData:Group>
+  </SampleData:SampleDataSource.Groups>
+</SampleData:SampleDataSource>

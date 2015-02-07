@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
-using GitLab_for_Windows_Phone.Views;
+using GitLab_for_Windows_Phone.Pages;
 
 namespace GitLab_for_Windows_Phone.Services
 {
@@ -37,6 +37,11 @@ namespace GitLab_for_Windows_Phone.Services
         public static bool NavigateToHome()
         {
             return Service.Frame.Navigate(typeof (HomePage));
+        }
+
+        public static bool NavigateToProject(int projectId)
+        {
+            return Service.Frame.Navigate(typeof (ProjectPage), projectId);
         }
     }
 }

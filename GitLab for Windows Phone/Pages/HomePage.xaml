@@ -1,16 +1,19 @@
 ﻿<Page
-    x:Class="GitLab_for_Windows_Phone.Views.HomePage"
+    x:Class="GitLab_for_Windows_Phone.Pages.HomePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:GitLab_for_Windows_Phone.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:designData="using:GitLab_for_Windows_Phone.DesignData"
+    xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
+    d:DataContext="{Binding Source={d:DesignData Source=/DesignData/samples/projects.json, Type=designData:DesignHomePageViewModel}}"
+    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}"
+    mc:Ignorable="d"
+    Padding="0">
     <Page.Background>
         <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
     </Page.Background>
     <Page.Resources>
-
         <FontFamily x:Key="ContentControlThemeFontFamily">Segoe WP</FontFamily>
         <x:Double x:Key="ControlContentThemeFontSize">12</x:Double>
         <Thickness x:Key="ListViewItemMargin">0</Thickness>
@@ -31,7 +34,6 @@
             <Setter Property="Margin" Value="{ThemeResource ListViewItemMargin}"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
             <Setter Property="VerticalContentAlignment" Value="Top"/>
-            <Setter Property="Padding" Value="30,0" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="ListViewItem">
@@ -246,10 +248,20 @@
             </Setter>
         </Style>
 
+        <Style TargetType="FontIcon" x:Key="HeaderIconStyle">
+            <Setter Property="Margin" Value="30,5,30,5" />
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+
+        <CollectionViewSource x:Name="ProjectsCollectionViewSource" 
+                              Source="{Binding Groups}"
+                              IsSourceGrouped="True"
+                              ItemsPath="Projects"/>
+
+        <converters:DateTimeToStringConverter x:Key="DateTimeToStringConverter" />
     </Page.Resources>
 
-    <Grid>
-
+    <Grid Margin="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -260,9 +272,9 @@
                   SelectedIndex="{Binding SelectedIndex, ElementName=ContentFlipView, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                   ItemContainerStyle="{StaticResource HeaderListViewItemStyle}">
 
-            <FontIcon FontSize="30" Glyph="&#xe115;" />
-            <FontIcon FontSize="30" Glyph="&#xe10f;" />
-            <FontIcon FontSize="30" Glyph="&#xe113;" />
+            <FontIcon FontSize="28" Glyph="&#xe115;" Style="{StaticResource HeaderIconStyle}" />
+            <FontIcon FontSize="28" Glyph="&#xe10f;" Style="{StaticResource HeaderIconStyle}" />
+            <FontIcon FontSize="28" Glyph="&#xe113;" Style="{StaticResource HeaderIconStyle}" />
 
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -271,43 +283,92 @@
             </ListView.ItemsPanel>
         </ListView>
 
-        <Border Grid.Row="1" Background="Black" Width="2"
+        <Border Grid.Row="1" 
+                Background="Black" 
+                Width="2"
                 Margin="30,5,0,0"/>
-        <FlipView Grid.Row="1" 
+        <FlipView Grid.Row="1"
+                  Padding="0"
                   RequestedTheme="Light"
                   Background="White"
                   SelectedIndex="{Binding SelectedIndex, ElementName=HeaderListView, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                   x:Name="ContentFlipView">
-            <ListView>
+            <ListView ItemsSource="{Binding Source={StaticResource ProjectsCollectionViewSource}}"
+                      SelectionMode="None"
+                      ItemClick="ProjectsListView_OnItemClick"
+                      IsItemClickEnabled="True"
+                      Padding="0,0,0,20">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
                     </Style>
                 </ListView.ItemContainerStyle>
+                <ListView.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderContainerStyle>
+                            <Style TargetType="ListViewHeaderItem">
+                                <Setter Property="Background" Value="Transparent" />
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </GroupStyle.HeaderContainerStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate>
+                                <Grid VerticalAlignment="Stretch">
+                                    <TextBlock Margin="10, 30" 
+                                           TextAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           Text="{Binding Namespace.Name}" 
+                                           TextWrapping="Wrap"
+                                           Style="{StaticResource GroupHeaderTextBlockStyle}" />
+                                </Grid>
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                    </GroupStyle>
+                </ListView.GroupStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid Margin="2"
-                              HorizontalAlignment="Stretch" 
-                              Height="200" >
-                            <ContentPresenter Content="{Binding}" />
+                        <Grid Margin="2" RequestedTheme="Light">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="110" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Border Background="#22A9A9A9"
+                                        MaxWidth="100" MaxHeight="100" 
+                                        Margin="10, 0"
+                                        Padding="2"
+                                        HorizontalAlignment="Center">
+                                    <Image Source="{Binding Namespace.Avatar.Url}"
+                                           VerticalAlignment="Center" 
+                                           Stretch="Uniform"/>
+                                </Border>
+
+                                <StackPanel Grid.Column="1">
+
+                                    <!--<StackPanel.Background>
+                                        <ImageBrush ImageSource="{Binding Namespace.Avatar.Url}"
+                                                    Opacity="0.05"
+                                                    AlignmentX="Center"
+                                                    AlignmentY="Center"
+                                                    Stretch="UniformToFill"/>
+                                    </StackPanel.Background>-->
+                                    <TextBlock Text="{Binding Name}"
+                                               Margin="0,0,10,0"
+                                               FontSize="25"
+                                               TextWrapping="Wrap"
+                                               FontWeight="SemiLight"
+                                               Style="{StaticResource TitleTextBlockStyle}"/>
+                                    <TextBlock>
+                                        Dernière activité le <Run Text="{Binding LastActivityDate, Converter={StaticResource DateTimeToStringConverter}, ConverterParameter='dd/MM/yyyy à HH:mm'}" />
+                                    </TextBlock>
+                                </StackPanel>
+                            </Grid>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
-                <x:String>zpçefkàzefàzçefi</x:String>
             </ListView>
+            
             <ListView>
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">

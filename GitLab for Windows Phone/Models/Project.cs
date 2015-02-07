@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 
 namespace GitLab_for_Windows_Phone.Models
 {
+    [DataContract]
     public class Project
     {
         [DataMember(Name = "id")]

@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="GitLab_for_Windows_Phone.Pages.ProjectPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GitLab_for_Windows_Phone.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:GitLab_for_Windows_Phone.ViewModels.Pages"
+    xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
+    mc:Ignorable="d"
+    d:DataContext="{Binding Source={d:DesignData Source=/DesignData/samples/commits.json, Type=viewModels:ProjectPageViewModel}}"
+    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}">
+    <Page.Background>
+        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
+    </Page.Background>
+    
+    <Page.Resources>
+        <converters:DateTimeToStringConverter x:Key="DateTimeToStringConverter" />
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock TextAlignment="Center" 
+                   TextWrapping="NoWrap"
+                   Margin="10,15"
+                   Style="{StaticResource TitleTextBlockStyle}"
+                   TextTrimming="WordEllipsis">
+            <Run Text="{Binding Project.Namespace.Name}" /> &gt; <Run Text="{Binding Project.Name}" />
+        </TextBlock>
+        <ListView Grid.Row="1"
+                  Padding="0,0,0,20"
+                  RequestedTheme="Light"
+                  Background="White"
+                  ItemsSource="{Binding Commits}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="10,0">
+                        <TextBlock Text="{Binding Title}"
+                                   Style="{StaticResource BodyTextBlockStyle}"/>
+                        <TextBlock TextWrapping="Wrap">
+                            Par <Run FontWeight="SemiBold" Text="{Binding AuthorInfo}" />, le <Run Text="{Binding Date, Converter={StaticResource DateTimeToStringConverter}, ConverterParameter='dd/MM/yyyy'}" />
+                        </TextBlock>
+                        <TextBlock Text="{Binding Description}"
+                                   TextWrapping="Wrap"
+                                   MinHeight="0"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

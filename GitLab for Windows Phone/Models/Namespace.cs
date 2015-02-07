@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace GitLab_for_Windows_Phone.Models
 {
+    [DataContract]
     public class Namespace
     {
         [DataMember(Name = "id")]
@@ -15,8 +16,8 @@ namespace GitLab_for_Windows_Phone.Models
         [DataMember(Name = "name")]
         public string Name { get; set; }
 
-        [DataMember(Name = "owner_id")]
-        public int OwnerId { get; set; }
+        //[DataMember(Name = "owner_id")]
+        //public int? OwnerId { get; set; }
 
         [DataMember(Name = "path")]
         public string Path { get; set; }
@@ -24,6 +25,8 @@ namespace GitLab_for_Windows_Phone.Models
         [DataMember(Name = "created_at")]
         public DateTimeOffset CreationDate { get; set; }
 
+        [DataMember(Name = "avatar")]
+        public Avatar Avatar { get; set; }
 
         public bool Equals(Namespace ns)
         {
@@ -52,5 +55,14 @@ namespace GitLab_for_Windows_Phone.Models
         {
             return Id;
         }
+
+        #region Overrides of Object
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
+        #endregion
     }
 }

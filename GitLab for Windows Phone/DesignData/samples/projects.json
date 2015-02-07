@@ -1,0 +1,240 @@
+﻿{
+    "Groups": [
+        {
+            "Namespace": {
+                "id": 2,
+                "name": "MCA",
+                "path": "mca",
+                "owner_id": null,
+                "created_at": "2015-01-07T13:23:12.939Z",
+                "updated_at": "2015-01-07T13:23:12.939Z",
+                "description": "",
+                "avatar": {
+                    "url": "http://95.130.152.189:8081/uploads/group/avatar/2/mca.png"
+                }
+            },
+
+            "Projects": [
+                {
+                    "id": 11,
+                    "description": "Outil de création de site web rapide et facile pour les coiffeurs clients de la MCA",
+                    "default_branch": "master",
+                    "public": false,
+                    "archived": false,
+                    "visibility_level": 10,
+                    "ssh_url_to_repo": "git@172.17.1.65:mca/shiny-dinosor.git",
+                    "http_url_to_repo": "http://172.17.1.65/mca/shiny-dinosor.git",
+                    "web_url": "http://172.17.1.65/mca/shiny-dinosor",
+                    "name": "Shiny Dinosor",
+                    "name_with_namespace": "MCA / Shiny Dinosor",
+                    "path": "shiny-dinosor",
+                    "path_with_namespace": "mca/shiny-dinosor",
+                    "issues_enabled": true,
+                    "merge_requests_enabled": true,
+                    "wiki_enabled": true,
+                    "snippets_enabled": false,
+                    "created_at": "2015-01-19T14:14:46.587Z",
+                    "last_activity_at": "2015-02-03T16:57:03.845Z",
+                    "namespace": {
+                        "id": 2,
+                        "name": "MCA",
+                        "path": "mca",
+                        "owner_id": null,
+                        "created_at": "2015-01-07T13:23:12.939Z",
+                        "updated_at": "2015-01-07T13:23:12.939Z",
+                        "description": "",
+                        "avatar": {
+                            "url": "http://95.130.152.189:8081/uploads/group/avatar/2/mca.png"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "description": "",
+                    "default_branch": "master",
+                    "public": false,
+                    "archived": false,
+                    "visibility_level": 10,
+                    "ssh_url_to_repo": "git@172.17.1.65:mca/wordpress.git",
+                    "http_url_to_repo": "http://172.17.1.65/mca/wordpress.git",
+                    "web_url": "http://172.17.1.65/mca/wordpress",
+                    "name": "Wordpress",
+                    "name_with_namespace": "MCA / Wordpress",
+                    "path": "wordpress",
+                    "path_with_namespace": "mca/wordpress",
+                    "issues_enabled": true,
+                    "merge_requests_enabled": true,
+                    "wiki_enabled": true,
+                    "snippets_enabled": false,
+                    "created_at": "2015-01-07T14:34:46.093Z",
+                    "last_activity_at": "2015-02-05T17:24:07.552Z",
+                    "namespace": {
+                        "id": 2,
+                        "name": "MCA",
+                        "path": "mca",
+                        "owner_id": null,
+                        "created_at": "2015-01-07T13:23:12.939Z",
+                        "updated_at": "2015-01-07T13:23:12.939Z",
+                        "description": "",
+                        "avatar": {
+                            "url": "http://95.130.152.189:8081/uploads/group/avatar/2/mca.png"
+                        }
+                    }
+                },
+                {
+                    "id": 1,
+                    "description": "",
+                    "default_branch": "master",
+                    "public": false,
+                    "archived": false,
+                    "visibility_level": 10,
+                    "ssh_url_to_repo": "git@172.17.1.65:mca/say-my-name.git",
+                    "http_url_to_repo": "http://172.17.1.65/mca/say-my-name.git",
+                    "web_url": "http://172.17.1.65/mca/say-my-name",
+                    "name": "Say My Name",
+                    "name_with_namespace": "MCA / Say My Name",
+                    "path": "say-my-name",
+                    "path_with_namespace": "mca/say-my-name",
+                    "issues_enabled": true,
+                    "merge_requests_enabled": true,
+                    "wiki_enabled": true,
+                    "snippets_enabled": false,
+                    "created_at": "2015-01-07T14:27:53.738Z",
+                    "last_activity_at": "2015-01-07T14:31:12.666Z",
+                    "namespace": {
+                        "id": 2,
+                        "name": "MCA",
+                        "path": "mca",
+                        "owner_id": null,
+                        "created_at": "2015-01-07T13:23:12.939Z",
+                        "updated_at": "2015-01-07T13:23:12.939Z",
+                        "description": "",
+                        "avatar": {
+                            "url": "http://95.130.152.189:8081/uploads/group/avatar/2/mca.png"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "Namespace": {
+                "id": 3,
+                "name": "Persee",
+                "path": "persee",
+                "owner_id": null,
+                "created_at": "2015-01-07T13:23:58.168Z",
+                "updated_at": "2015-01-07T13:28:30.463Z",
+                "description": "",
+                "avatar": {
+                    "url": "http://95.130.152.189:8081/uploads/group/avatar/3/Square310x310Logo.scale-100.png"
+                }
+            },
+            "Projects": [
+                {
+                    "id": 7,
+                    "description": "",
+                    "default_branch": "master",
+                    "public": false,
+                    "archived": false,
+                    "visibility_level": 10,
+                    "ssh_url_to_repo": "git@172.17.1.65:persee/persee-web-api.git",
+                    "http_url_to_repo": "http://172.17.1.65/persee/persee-web-api.git",
+                    "web_url": "http://172.17.1.65/persee/persee-web-api",
+                    "name": "persee-web-api",
+                    "name_with_namespace": "Persee / persee-web-api",
+                    "path": "persee-web-api",
+                    "path_with_namespace": "persee/persee-web-api",
+                    "issues_enabled": true,
+                    "merge_requests_enabled": true,
+                    "wiki_enabled": true,
+                    "snippets_enabled": false,
+                    "created_at": "2015-01-07T14:48:49.589Z",
+                    "last_activity_at": "2015-01-07T14:49:16.136Z",
+                    "namespace": {
+                        "id": 3,
+                        "name": "Persee",
+                        "path": "persee",
+                        "owner_id": null,
+                        "created_at": "2015-01-07T13:23:58.168Z",
+                        "updated_at": "2015-01-07T13:28:30.463Z",
+                        "description": "",
+                        "avatar": {
+                            "url": "http://95.130.152.189:8081/uploads/group/avatar/3/Square310x310Logo.scale-100.png"
+                        }
+                    }
+                },
+                {
+                    "id": 9,
+                    "description": "",
+                    "default_branch": "develop",
+                    "public": false,
+                    "archived": false,
+                    "visibility_level": 10,
+                    "ssh_url_to_repo": "git@172.17.1.65:persee/modern-ui-client.git",
+                    "http_url_to_repo": "http://172.17.1.65/persee/modern-ui-client.git",
+                    "web_url": "http://172.17.1.65/persee/modern-ui-client",
+                    "name": "Modern UI Client",
+                    "name_with_namespace": "Persee / Modern UI Client",
+                    "path": "modern-ui-client",
+                    "path_with_namespace": "persee/modern-ui-client",
+                    "issues_enabled": true,
+                    "merge_requests_enabled": true,
+                    "wiki_enabled": true,
+                    "snippets_enabled": false,
+                    "created_at": "2015-01-07T14:50:58.288Z",
+                    "last_activity_at": "2015-02-05T17:54:25.650Z",
+                    "namespace": {
+                        "id": 3,
+                        "name": "Persee",
+                        "path": "persee",
+                        "owner_id": null,
+                        "created_at": "2015-01-07T13:23:58.168Z",
+                        "updated_at": "2015-01-07T13:28:30.463Z",
+                        "description": "",
+                        "avatar": {
+                            "url": "http://95.130.152.189:8081/uploads/group/avatar/3/Square310x310Logo.scale-100.png"
+                        }
+                    }
+                },
+                {
+                    "id": 10,
+                    "description": "",
+                    "default_branch": "develop",
+                    "public": false,
+                    "archived": false,
+                    "visibility_level": 10,
+                    "ssh_url_to_repo": "git@172.17.1.65:mitch/papaciccio-for-windows-phone.git",
+                    "http_url_to_repo": "http://172.17.1.65/mitch/papaciccio-for-windows-phone.git",
+                    "web_url": "http://172.17.1.65/mitch/papaciccio-for-windows-phone",
+                    "owner": {
+                        "name": "Mickael GOETZ",
+                        "username": "mitch",
+                        "id": 2,
+                        "state": "active",
+                        "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+                    },
+                    "name": "PapaCiccio for Windows Phone",
+                    "name_with_namespace": "Mickael GOETZ / PapaCiccio for Windows Phone",
+                    "path": "papaciccio-for-windows-phone",
+                    "path_with_namespace": "mitch/papaciccio-for-windows-phone",
+                    "issues_enabled": true,
+                    "merge_requests_enabled": true,
+                    "wiki_enabled": true,
+                    "snippets_enabled": false,
+                    "created_at": "2015-01-07T14:59:52.759Z",
+                    "last_activity_at": "2015-01-07T15:00:16.783Z",
+                    "namespace": {
+                        "id": 4,
+                        "name": "mitch",
+                        "path": "mitch",
+                        "owner_id": 2,
+                        "created_at": "2015-01-07T13:25:20.601Z",
+                        "updated_at": "2015-01-07T13:25:20.601Z",
+                        "description": "",
+                        "avatar": null
+                    }
+                }
+            ]
+        }
+    ]
+}

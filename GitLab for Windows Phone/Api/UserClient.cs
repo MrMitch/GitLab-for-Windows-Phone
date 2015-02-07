@@ -13,7 +13,7 @@ namespace GitLab_for_Windows_Phone.Api
 
         public Session GetToken()
         {
-            
+            return null;
         }
     }
 }
