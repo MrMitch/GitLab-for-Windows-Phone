@@ -1,0 +1,474 @@
+﻿{
+    "Project": {
+        "id": 9,
+        "description": "",
+        "default_branch": "develop",
+        "public": false,
+        "archived": false,
+        "visibility_level": 10,
+        "ssh_url_to_repo": "git@172.17.1.65:persee/modern-ui-client.git",
+        "http_url_to_repo": "http://172.17.1.65/persee/modern-ui-client.git",
+        "web_url": "http://172.17.1.65/persee/modern-ui-client",
+        "name": "Modern UI Client",
+        "name_with_namespace": "Persee / Modern UI Client",
+        "path": "modern-ui-client",
+        "path_with_namespace": "persee/modern-ui-client",
+        "issues_enabled": true,
+        "merge_requests_enabled": true,
+        "wiki_enabled": true,
+        "snippets_enabled": false,
+        "created_at": "2015-01-07T14:50:58.288Z",
+        "last_activity_at": "2015-02-05T17:54:25.650Z",
+        "namespace": {
+            "id": 3,
+            "name": "Persee",
+            "path": "persee",
+            "owner_id": null,
+            "created_at": "2015-01-07T13:23:58.168Z",
+            "updated_at": "2015-01-07T13:28:30.463Z",
+            "description": "",
+            "avatar": {
+                "url": "http://95.130.152.189:8081/uploads/group/avatar/3/Square310x310Logo.scale-100.png"
+            }
+        }
+    },
+
+    "Commits": [
+        {
+            "id": "667e292c78018ccb5cbe347922dc7e3bb3b6f3b0",
+            "short_id": "66798676e292c",
+            "title": "CodePage: change text size",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T18:54:15.000+01:00",
+            "message": "CodePage: change text size\n"
+        },
+        {
+            "id": "6c5e3159f9252459297608815bf667b5f7624b7d",
+            "short_id": "6c5e3159",
+            "title": "CasePage: cosmetics",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T17:18:25.000+01:00",
+            "message": "CasePage: cosmetics\n"
+        },
+        {
+            "id": "e21ace6ea3f569201aedf9ccfcf24ef820f7de35",
+            "short_id": "e21ace6e",
+            "title": "CasePageViewModel: remove temp file when exporting document content",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T16:44:22.000+01:00",
+            "message": "CasePageViewModel: remove temp file when exporting document content\n"
+        },
+        {
+            "id": "8cc9b91050522ca810e44be5158448f8e328430f",
+            "short_id": "8cc9b910",
+            "title": "CodePage: color enhancement",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T16:43:57.000+01:00",
+            "message": "CodePage: color enhancement\n"
+        },
+        {
+            "id": "685f3c7c4ee104922ace23e3213c7d9382f71683",
+            "short_id": "685f3c7c",
+            "title": "version 0.1.6.0",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T15:52:23.000+01:00",
+            "message": "version 0.1.6.0\n"
+        },
+        {
+            "id": "edeb768b2338c68f5b15fcd9361dd26f5afeb82a",
+            "short_id": "edeb768b",
+            "title": "Search in douments content",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T15:50:44.000+01:00",
+            "message": "Search in douments content\n"
+        },
+        {
+            "id": "63c748fdbdcef05b710adac9a945096767f55a2e",
+            "short_id": "63c748fd",
+            "title": "Frame pages: color adjustments",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T11:00:00.000+01:00",
+            "message": "Frame pages: color adjustments\n"
+        },
+        {
+            "id": "2f37bbd281cfc0691d968e573b167e51ddb305c3",
+            "short_id": "2f37bbd2",
+            "title": "Merge branch 'feature/ocr' into develop",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T10:31:46.000+01:00",
+            "message": "Merge branch 'feature/ocr' into develop\n\nConflicts:\n\tAidaCorrex/Pages/Case/CasePage.xaml.cs\n\tAidaCorrex/ViewModels/Case/CaseViewModel.cs\n\tAidaCorrex/ViewModels/Pages/CasePageViewModel.cs\n\tAidaCorrex/packages.config\n"
+        },
+        {
+            "id": "b51619d1176487f45287e62f6659dad70f3af5d8",
+            "short_id": "b51619d1",
+            "title": "OCRize documents when they're added to a case",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-05T10:09:07.000+01:00",
+            "message": "OCRize documents when they're added to a case\n"
+        },
+        {
+            "id": "6a1d3025d7ad766be5e15ccf09d81070447f06ec",
+            "short_id": "6a1d3025",
+            "title": "Page.BottomBar.Background",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-02T11:53:34.000+01:00",
+            "message": "Page.BottomBar.Background\n"
+        },
+        {
+            "id": "11026bdea5e63ec861176170352e4ab6d6f87343",
+            "short_id": "11026bde",
+            "title": "Merge branch 'update-frame' into develop",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-02T10:30:10.000+01:00",
+            "message": "Merge branch 'update-frame' into develop\n"
+        },
+        {
+            "id": "b8e070f10f6435222674d6067fb15c5637308c4f",
+            "short_id": "b8e070f1",
+            "title": "FrameEditionPageViewModel: update PendingModifications when necessary",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-02T10:28:05.000+01:00",
+            "message": "FrameEditionPageViewModel: update PendingModifications when necessary\n"
+        },
+        {
+            "id": "fac864002947cbe397b41dcab9ffc0f3d7294774",
+            "short_id": "fac86400",
+            "title": "FrameExploitationPage: disable print button",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-01T18:40:09.000+01:00",
+            "message": "FrameExploitationPage: disable print button\n"
+        },
+        {
+            "id": "1c04eb032e222cc02ca1893d5381ef633e02bc85",
+            "short_id": "1c04eb03",
+            "title": "WIP update frame",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-01T18:34:15.000+01:00",
+            "message": "WIP update frame\n"
+        },
+        {
+            "id": "776b95a1fe49965622fb0cdf7b100b65c5a1f2b8",
+            "short_id": "776b95a1",
+            "title": "WIP frame update",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-02-01T17:34:14.000+01:00",
+            "message": "WIP frame update\n"
+        },
+        {
+            "id": "3904d2df046db391020c62f5562d306e190bdfa7",
+            "short_id": "3904d2df",
+            "title": "WIP frame edition: field \u0026 fragment deletion",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-01-30T23:37:34.000+01:00",
+            "message": "WIP frame edition: field \u0026 fragment deletion\n"
+        },
+        {
+            "id": "68ee00f6678cbcb2e82a7254107e498bc8a5d8fb",
+            "short_id": "68ee00f6",
+            "title": "WIP field edition",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-01-30T19:17:17.000+01:00",
+            "message": "WIP field edition\n"
+        },
+        {
+            "id": "6ac85bcab19a51853cb17940ef50a110e319202a",
+            "short_id": "6ac85bca",
+            "title": "fix Infragistics WTF error",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-01-30T19:17:00.000+01:00",
+            "message": "fix Infragistics WTF error\n"
+        },
+        {
+            "id": "4016ed8e63856df7eb44306bdb315476f40aabe0",
+            "short_id": "4016ed8e",
+            "title": "FragmentEditionViewmodel.IsReadOnly \u0026 FieldEditionViewModel.IsReadOnly",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-01-29T18:00:12.000+01:00",
+            "message": "FragmentEditionViewmodel.IsReadOnly \u0026 FieldEditionViewModel.IsReadOnly\n"
+        },
+        {
+            "id": "5986943391ddd97933cac5d2717caddd7e2561ac",
+            "short_id": "59869433",
+            "title": "update to version 0.1.5.2",
+            "author_name": "Mickael GOETZ",
+            "author_email": "contact@mickael-goetz.com",
+            "created_at": "2015-01-29T15:38:21.000+01:00",
+            "message": "update to version 0.1.5.2\n"
+        }
+
+    ],
+
+    "Branches": [
+        {
+            "name": "dailegal-demo",
+            "commit": {
+                "id": "e3a35b68b00b27347abf2a2f6db6a6241575a2fc",
+                "message": "fake Frame\n",
+                "parent_ids": [ "86036749d7b40b99d00cef35584082e991f594b3" ],
+                "authored_date": "2015-01-09T17:43:19.000+01:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2015-01-09T17:43:19.000+01:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": false
+        },
+        {
+            "name": "develop",
+            "commit": {
+                "id": "667e292c78018ccb5cbe347922dc7e3bb3b6f3b0",
+                "message": "CodePage: change text size\n",
+                "parent_ids": [ "6c5e3159f9252459297608815bf667b5f7624b7d" ],
+                "authored_date": "2015-02-05T18:54:15.000+01:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2015-02-05T18:54:15.000+01:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": false
+        },
+        {
+            "name": "facebook-integration",
+            "commit": {
+                "id": "0d897d0d0b1f6891aa6cfdb43669b3275a52e699",
+                "message": "manage Student and Pro profiles\n\nStudents:\n- hide Cases \u0026 Frames\n- enable FB \u0026 RevisionSheets by default\n\nPro:\n- show Cases \u0026 Frames\n- disable FB \u0026 RevisionSheets by default\n",
+                "parent_ids": [ "42b187d9d7bfdaf0f89b9d308632ce9e9948d4a5" ],
+                "authored_date": "2014-05-27T18:20:43.000+02:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2014-05-27T18:20:43.000+02:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": false
+        },
+        {
+            "name": "feature/ocr",
+            "commit": {
+                "id": "7c7c45ba2651bbaee2160f9f638dc5439a8372ef",
+                "message": "WIP OCR : working text extraction\n",
+                "parent_ids": [ "a7c649505dd36af4f0b9cb74c4c5e6cfe4c4af8a" ],
+                "authored_date": "2015-01-26T01:50:50.000+01:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2015-01-26T01:50:50.000+01:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": false
+        },
+        {
+            "name": "master",
+            "commit": {
+                "id": "ac3533cb535a04aa7ea92544eccf9f0c6962d776",
+                "message": "document rename button flyout\n",
+                "parent_ids": [ "7f5a144eb7a0669f091ca6e298c132d362c67357" ],
+                "authored_date": "2014-01-07T18:41:47.000+01:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2014-01-07T18:41:47.000+01:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": true
+        },
+        {
+            "name": "navigation-service",
+            "commit": {
+                "id": "d081ab6c90d05f39f27163dff3349fe3fa5c67a9",
+                "message": "NavigationService\n",
+                "parent_ids": [ "57382f886a7abc484e064a89c3ee97376b920889" ],
+                "authored_date": "2015-01-06T10:27:23.000+01:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2015-01-06T10:27:23.000+01:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": false
+        },
+        {
+            "name": "update-frame",
+            "commit": {
+                "id": "b8e070f10f6435222674d6067fb15c5637308c4f",
+                "message": "FrameEditionPageViewModel: update PendingModifications when necessary\n",
+                "parent_ids": [ "fac864002947cbe397b41dcab9ffc0f3d7294774" ],
+                "authored_date": "2015-02-02T10:28:05.000+01:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2015-02-02T10:28:05.000+01:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": false
+        },
+        {
+            "name": "update-frame-field",
+            "commit": {
+                "id": "a499bc268c2f0a0154b3b7a717630019be7ef9cf",
+                "message": "WIP field update\n",
+                "parent_ids": [ "b7a8eb9e5e9ace6e451aaf8ae2c53180f64e4abf" ],
+                "authored_date": "2014-03-25T18:57:45.000+01:00",
+                "author_name": "Mickael GOETZ",
+                "author_email": "contact@mickael-goetz.com",
+                "committed_date": "2014-03-25T18:57:45.000+01:00",
+                "committer_name": "Mickael GOETZ",
+                "committer_email": "contact@mickael-goetz.com"
+            },
+            "protected": false
+        }
+    ],
+
+    "OpenedIssues": [
+        {
+            "id": 6,
+            "iid": 6,
+            "project_id": 9,
+            "title": "improve the DataAccessLayer project",
+            "description": "Change the project to be a class library so it can be used in both the WPF and Modern UI projects \r\n\r\n* [ ] IModel =\u003e int Id\r\n* [ ] SQLiteRepo =\u003e saveModel(IModel)\r\n* [ ] SQLiteRepo =\u003e deleteModel(IModel)\r\n* [x] Transactions\r\n\r\n",
+            "state": "opened",
+            "created_at": "2015-02-08T19:45:08.867Z",
+            "updated_at": "2015-02-08T19:45:08.867Z",
+            "labels": [ ],
+            "milestone": null,
+            "assignee": {
+                "name": "Mickael GOETZ",
+                "username": "mitch",
+                "id": 2,
+                "state": "active",
+                "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+            },
+            "author": {
+                "name": "Mickael GOETZ",
+                "username": "mitch",
+                "id": 2,
+                "state": "active",
+                "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+            }
+        },
+        {
+            "id": 3,
+            "iid": 3,
+            "project_id": 9,
+            "title": "modification / suppression des champs d'une trame",
+            "description": "",
+            "state": "opened",
+            "created_at": "2015-02-08T19:41:10.527Z",
+            "updated_at": "2015-02-08T19:41:10.527Z",
+            "labels": [ ],
+            "milestone": null,
+            "assignee": null,
+            "author": {
+                "name": "Mickael GOETZ",
+                "username": "mitch",
+                "id": 2,
+                "state": "active",
+                "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+            }
+        },
+        {
+            "id": 2,
+            "iid": 2,
+            "project_id": 9,
+            "title": "OCR documents when added to a case",
+            "description": "When a document is added to a case, we should try to OCRize its content so we can use it when searching.\r\n",
+            "state": "opened",
+            "created_at": "2015-02-08T19:40:45.917Z",
+            "updated_at": "2015-02-08T19:46:15.967Z",
+            "labels": [ ],
+            "milestone": null,
+            "assignee": null,
+            "author": {
+                "name": "Mickael GOETZ",
+                "username": "mitch",
+                "id": 2,
+                "state": "active",
+                "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+            }
+        },
+        {
+            "id": 1,
+            "iid": 1,
+            "project_id": 9,
+            "title": "show dragged fragment's VisualId when draggind over RtfEditor",
+            "description": "I would be nice to show the `VisualId` of the field being dragged over the RtfEditor whilst dragging.",
+            "state": "opened",
+            "created_at": "2015-02-08T19:34:14.062Z",
+            "updated_at": "2015-02-08T19:34:14.062Z",
+            "labels": [ ],
+            "milestone": null,
+            "assignee": null,
+            "author": {
+                "name": "Mickael GOETZ",
+                "username": "mitch",
+                "id": 2,
+                "state": "active",
+                "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+            }
+        }
+    ],
+    
+    "ClosedIssues": [
+        {
+            "id": 5,
+            "iid": 5,
+            "project_id": 9,
+            "title": "remove Locator class in favor of AppViewModel",
+            "description": "",
+            "state": "closed",
+            "created_at": "2015-02-08T19:41:58.024Z",
+            "updated_at": "2015-02-08T19:41:59.895Z",
+            "labels": [ ],
+            "milestone": null,
+            "assignee": null,
+            "author": {
+                "name": "Mickael GOETZ",
+                "username": "mitch",
+                "id": 2,
+                "state": "active",
+                "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+            }
+        },
+        {
+            "id": 4,
+            "iid": 4,
+            "project_id": 9,
+            "title": "remove Kernel class in favor of SettingsHelper",
+            "description": "",
+            "state": "closed",
+            "created_at": "2015-02-08T19:41:38.813Z",
+            "updated_at": "2015-02-08T19:42:08.129Z",
+            "labels": [ ],
+            "milestone": null,
+            "assignee": null,
+            "author": {
+                "name": "Mickael GOETZ",
+                "username": "mitch",
+                "id": 2,
+                "state": "active",
+                "avatar_url": "http://www.gravatar.com/avatar/fad26b4bd6a52165603ca517777ccf8c?s=40\u0026d=identicon"
+            }
+        }
+    ]
+}

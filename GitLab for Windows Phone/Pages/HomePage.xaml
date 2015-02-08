@@ -251,6 +251,7 @@
         <Style TargetType="FontIcon" x:Key="HeaderIconStyle">
             <Setter Property="Margin" Value="30,5,30,5" />
             <Setter Property="FontSize" Value="30" />
+            <Setter Property="Foreground" Value="White" />
         </Style>
 
         <CollectionViewSource x:Name="ProjectsCollectionViewSource" 

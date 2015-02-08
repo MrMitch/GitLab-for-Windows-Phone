@@ -48,19 +48,33 @@ namespace GitLab_for_Windows_Phone.Pages
         private async void NavigationHelperOnLoadState(object sender, LoadStateEventArgs loadStateEventArgs)
         {
             // temp
-            var projectsFileUri = new Uri("ms-appx:///DesignData/samples/commits.json");
+            var projectsFileUri = new Uri("ms-appx:///DesignData/samples/project.json");
             var projectsFile = await StorageFile.GetFileFromApplicationUriAsync(projectsFileUri);
             var projectsJson = await FileIO.ReadTextAsync(projectsFile);
             var vm = JsonConvert.DeserializeObject<ProjectPageViewModel>(projectsJson);
-
-            ViewModel.Project = vm.Project;
 
             foreach (var commit in vm.Commits)
             {
                 ViewModel.Commits.Add(commit);
             }
 
-            // ViewModel.
+            foreach (var branch in vm.Branches)
+            {
+                ViewModel.Branches.Add(branch);
+            }
+            
+            foreach (var openedIssue in vm.OpenedIssues)
+            {
+                ViewModel.OpenedIssues.Add(openedIssue);
+            }
+
+            foreach (var closedIssue in vm.ClosedIssues)
+            {
+                ViewModel.ClosedIssues.Add(closedIssue);
+            }
+
+            ViewModel.SelectedBranch = ViewModel.Branches.FirstOrDefault(b => b.Name == "develop");
+            ViewModel.Project = vm.Project;
         }
 
         #region Inscription de NavigationHelper
