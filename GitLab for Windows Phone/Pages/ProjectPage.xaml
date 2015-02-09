@@ -9,13 +9,10 @@
     xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
     mc:Ignorable="d"
     d:DataContext="{Binding Source={d:DesignData Source=/DesignData/samples/project.json, Type=viewModels:ProjectPageViewModel}}"
-    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}">
-    <Page.Background>
-        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
-    </Page.Background>
-
+    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}"
+    Background="{StaticResource DefaultColorBrush}">
+    
     <Page.Resources>
-        <converters:DateTimeToStringConverter x:Key="DateTimeToStringConverter" />
         <SolidColorBrush x:Key="ComboBoxBackgroundThemeBrush" Color="Transparent"/>
         <Thickness x:Key="ComboBoxBorderThemeThickness">2.5</Thickness>
         <FontFamily x:Key="PhoneFontFamilyNormal">Segoe WP</FontFamily>
@@ -243,9 +240,9 @@
                              Margin="10,5"
                              Opacity="0.2"
                              Stroke="DarkGray">
-                        <Ellipse.Fill>
+                        <!--<Ellipse.Fill>
                             <ImageBrush ImageSource="{Binding Author.AvatarUri}" />
-                        </Ellipse.Fill>
+                        </Ellipse.Fill>-->
                     </Ellipse>
                     <TextBlock Foreground="{Binding IsClosed, Converter={StaticResource BooleanToColorConverter}}" 
                                FontSize="20"
@@ -265,31 +262,28 @@
                                Style="{StaticResource BodyTextBlockStyle}"/>
                     <TextBlock  >
                         Par <Run FontWeight="SemiBold" Text="{Binding Author.Name}" />,
-                        le <Run Text="{Binding CreationDate, Converter={StaticResource DateTimeToStringConverter}, ConverterParameter='dd/MM/yyy'}" />
+                        le <Run Text="{Binding CreationDate, Converter={StaticResource DateTimeConverter}, ConverterParameter='dd/MM/yyy'}" />
                     </TextBlock>
                 </StackPanel>
             </Grid>
         </DataTemplate>
     </Page.Resources>
 
-    <FlipView SelectedIndex="1"
-              Background="White">
+    <FlipView Background="White">
         <ListView Padding="0,0,0,20"
                   RequestedTheme="Light"
                   ItemsSource="{Binding Commits}">
         <ListView.Header>
             <StackPanel>
-                <TextBlock TextAlignment="Center"
-                           FontWeight="SemiLight"
-                           TextWrapping="Wrap"
-                           Margin="10,15"
-                           FontSize="28"
-                           LineHeight="28"
-                           Style="{StaticResource TitleTextBlockStyle}"
-                           TextTrimming="WordEllipsis">
-                    <TextBlock.Foreground>
-                        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
-                    </TextBlock.Foreground>
+                    <TextBlock TextAlignment="Center"
+                               FontWeight="SemiLight"
+                               TextWrapping="Wrap"
+                               Margin="10,15"
+                               FontSize="28"
+                               LineHeight="28"
+                               Style="{StaticResource TitleTextBlockStyle}"
+                               TextTrimming="WordEllipsis"
+                                Foreground="{StaticResource DefaultColorBrush}">
                     <Run Text="{Binding Project.Namespace.Name}" /> &gt; <Run Text="{Binding Project.Name}" />
                 </TextBlock>
 
@@ -320,7 +314,7 @@
                     <TextBlock Text="{Binding Title}"
                                Style="{StaticResource BodyTextBlockStyle}"/>
                     <TextBlock TextWrapping="Wrap">
-                        Par <Run FontWeight="SemiBold" Text="{Binding AuthorInfo}" />, le <Run Text="{Binding Date, Converter={StaticResource DateTimeToStringConverter}, ConverterParameter='dd/MM/yyyy'}" />
+                        Par <Run FontWeight="SemiBold" Text="{Binding AuthorInfo}" />, le <Run Text="{Binding Date, Converter={StaticResource DateTimeConverter}, ConverterParameter='dd/MM/yyyy'}" />
                     </TextBlock>
                     <TextBlock Text="{Binding Description}"
                                TextWrapping="Wrap"
@@ -333,7 +327,9 @@
         <ListView Padding="0,0,0,20"
                   RequestedTheme="Light"
                   ItemsSource="{Binding OpenedIssues}"
-                  ItemTemplate="{StaticResource IssueDataTemplate}">
+                  ItemTemplate="{StaticResource IssueDataTemplate}"
+                  IsItemClickEnabled="True"
+                  ItemClick="IssuesListView_OnItemClick">
             <ListView.Header>
                 <TextBlock TextAlignment="Center"
                            FontWeight="SemiLight"
@@ -342,10 +338,8 @@
                            FontSize="28"
                            LineHeight="28"
                            Style="{StaticResource TitleTextBlockStyle}"
-                           TextTrimming="WordEllipsis">
-                    <TextBlock.Foreground>
-                        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
-                    </TextBlock.Foreground>
+                           TextTrimming="WordEllipsis"
+                           Foreground="{StaticResource DefaultColorBrush}">
                     <Run Text="{Binding Project.Namespace.Name}" /> &gt; <Run Text="{Binding Project.Name}" />
                 </TextBlock>
             </ListView.Header>
@@ -354,7 +348,9 @@
         <ListView Padding="0,0,0,20"
                   RequestedTheme="Light"
                   ItemsSource="{Binding ClosedIssues}"
-                  ItemTemplate="{StaticResource IssueDataTemplate}">
+                  ItemTemplate="{StaticResource IssueDataTemplate}"
+                  IsItemClickEnabled="True"
+                  ItemClick="IssuesListView_OnItemClick">
             <ListView.Header>
                 <TextBlock TextAlignment="Center"
                            FontWeight="SemiLight"
@@ -363,10 +359,8 @@
                            FontSize="28"
                            LineHeight="28"
                            Style="{StaticResource TitleTextBlockStyle}"
-                           TextTrimming="WordEllipsis">
-                    <TextBlock.Foreground>
-                        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
-                    </TextBlock.Foreground>
+                           TextTrimming="WordEllipsis"
+                           Foreground="{StaticResource DefaultColorBrush}">
                     <Run Text="{Binding Project.Namespace.Name}" /> &gt; <Run Text="{Binding Project.Name}" />
                 </TextBlock>
             </ListView.Header>

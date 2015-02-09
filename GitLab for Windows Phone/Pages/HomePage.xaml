@@ -5,14 +5,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:designData="using:GitLab_for_Windows_Phone.DesignData"
-    xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
     d:DataContext="{Binding Source={d:DesignData Source=/DesignData/samples/projects.json, Type=designData:DesignHomePageViewModel}}"
     DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}"
     mc:Ignorable="d"
-    Padding="0">
-    <Page.Background>
-        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
-    </Page.Background>
+    Padding="0"
+    Background="{StaticResource DefaultColorBrush}">
     <Page.Resources>
         <FontFamily x:Key="ContentControlThemeFontFamily">Segoe WP</FontFamily>
         <x:Double x:Key="ControlContentThemeFontSize">12</x:Double>
@@ -258,8 +255,6 @@
                               Source="{Binding Groups}"
                               IsSourceGrouped="True"
                               ItemsPath="Projects"/>
-
-        <converters:DateTimeToStringConverter x:Key="DateTimeToStringConverter" />
     </Page.Resources>
 
     <Grid Margin="0">
@@ -361,7 +356,7 @@
                                                FontWeight="SemiLight"
                                                Style="{StaticResource TitleTextBlockStyle}"/>
                                     <TextBlock>
-                                        Dernière activité le <Run Text="{Binding LastActivityDate, Converter={StaticResource DateTimeToStringConverter}, ConverterParameter='dd/MM/yyyy à HH:mm'}" />
+                                        Dernière activité le <Run Text="{Binding LastActivityDate, Converter={StaticResource DateTimeConverter}, ConverterParameter='dd/MM/yyyy à HH:mm'}" />
                                     </TextBlock>
                                 </StackPanel>
                             </Grid>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="227dcc71-18b8-41ad-be46-858d3f9cdb80" Publisher="CN=Mickael" Version="1.0.0.0" />
+  <Identity Name="227dcc71-18b8-41ad-be46-858d3f9cdb80" Publisher="CN=Mickael" Version="0.1.0.0" />
   <mp:PhoneIdentity PhoneProductId="227dcc71-18b8-41ad-be46-858d3f9cdb80" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>GitLab for Windows Phone</DisplayName>

@@ -18,5 +18,10 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
         }
 
         public ObservableCollection<Note> Comments { get; set; }
+
+        public IssuePageViewModel()
+        {
+            Comments = new ObservableCollection<Note>();
+        }
     }
 }

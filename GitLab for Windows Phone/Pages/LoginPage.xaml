@@ -5,11 +5,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}">
-
-    <Page.Background>
-        <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" />
-    </Page.Background>
+    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}"
+    Background="{StaticResource DefaultColorBrush}">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="../Assets/img/gitlab-heads.png"

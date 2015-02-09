@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GitLab_for_Windows_Phone"
+    xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
     RequestedTheme="Dark">
 
     <Application.Resources>
@@ -18,8 +19,9 @@
 
 
             <Color x:Key="DefaultBackgroundColor">#554488</Color>
-
-
+            <SolidColorBrush Color="{StaticResource DefaultBackgroundColor}" x:Key="DefaultColorBrush" />
+            <converters:DateTimeToStringConverter x:Key="DateTimeConverter" />
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

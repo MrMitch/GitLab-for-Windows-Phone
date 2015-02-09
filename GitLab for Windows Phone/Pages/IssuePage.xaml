@@ -5,10 +5,107 @@
     xmlns:local="using:GitLab_for_Windows_Phone.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns:viewModels="using:GitLab_for_Windows_Phone.ViewModels.Pages"
+    xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    d:DataContext="{Binding Source={d:DesignData Source=/DesignData/samples/issue.json, Type=viewModels:IssuePageViewModel}}"
+    Background="{StaticResource DefaultColorBrush}">
+    <Page.Resources>
+        <SolidColorBrush Color="#4ADFDFDF" x:Key="CommentBackgroundBrush" />
+    </Page.Resources>
+    <ScrollViewer ZoomMode="Disabled"
+                  IsHorizontalRailEnabled="False"
+                  HorizontalScrollMode="Disabled"
+                  HorizontalScrollBarVisibility="Disabled"
+                  IsVerticalRailEnabled="True"
+                  VerticalScrollMode="Auto"
+                  VerticalScrollBarVisibility="Auto"
+                  Background="White">
+        <StackPanel RequestedTheme="Light">
+            <TextBlock FontWeight="SemiLight"
+                       FontSize="28"
+                       Margin="10"
+                       LineHeight="28"
+                       TextWrapping="Wrap"
+                       Style="{StaticResource TitleTextBlockStyle}"
+                       Foreground="{StaticResource DefaultColorBrush}">
+                
+                #<Run Text="{Binding Issue.RelativeId}" /> • <Run Text="{Binding Issue.Title}" />
+            </TextBlock>
 
-    <Grid>
+            <TextBlock Text="{Binding Issue.Description}" 
+                       IsTextSelectionEnabled="True" 
+                       Margin="10,10,10,5"
+                       Style="{StaticResource BodyTextBlockStyle}"/>
+            <TextBlock Margin="10,0,10,10">
+                Ouverte par <Run Text="{Binding Issue.Author.Username}" /> (<Run Text="{Binding Issue.Author.Name}" />), 
+                <Run Text="{Binding Issue.CreationDate, Converter={StaticResource DateTimeConverter}, ConverterParameter='le dd/MM/yyyy à HH:mm:ss'}" />
+            </TextBlock>
+            
+            <ItemsControl ItemsSource="{Binding Comments}"
+                          Margin="0,10">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,0,0,20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            
+                            <Ellipse Grid.Row="0" Grid.Column="0"
+                                     Width="60" 
+                                     Height="60"
+                                     StrokeThickness="2"
+                                     Stroke="LightGray"
+                                     Margin="10,0">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="{Binding Author.AvatarUri}" />
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <StackPanel Grid.Row="0" Grid.Column="1"
+                                        VerticalAlignment="Center">
+                                <TextBlock TextWrapping="Wrap">
+                                    <Run Text="{Binding Author.Username}" FontWeight="SemiBold" /> (<Run Text="{Binding Author.Name}" />)
+                                </TextBlock>
+                                <TextBlock TextWrapping="Wrap">
+                                    Le <Run Text="{Binding CreationDate, Converter={StaticResource DateTimeConverter}, ConverterParameter='dd/MM/yyyy'}" />
+                                    à <Run Text="{Binding CreationDate, Converter={StaticResource DateTimeConverter}, ConverterParameter='HH:mm:ss'}" />
+                                </TextBlock>
+                            </StackPanel>
 
-    </Grid>
+
+                            <Polygon Grid.Row="1" Grid.Column="0" 
+                                     VerticalAlignment="Bottom"
+                                     HorizontalAlignment="Center"
+                                     Points="10,0 0,10 20,10" 
+                                     Fill="{StaticResource CommentBackgroundBrush}" />
+
+                            <Border Grid.Row="2" Grid.Column="0" 
+                                    Grid.ColumnSpan="2"
+                                    Background="{StaticResource CommentBackgroundBrush}"
+                                    Padding="10">
+                                <TextBlock TextWrapping="Wrap" Text="{Binding Body}"
+                                           IsTextSelectionEnabled="True"
+                                           Style="{StaticResource BodyTextBlockStyle}"/>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            
+            <TextBox MinHeight="180"
+                     PlaceholderText="Add a comment"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"/>
+            <Button HorizontalAlignment="Stretch"
+                    BorderThickness="1"
+                    Content="Comment"/>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

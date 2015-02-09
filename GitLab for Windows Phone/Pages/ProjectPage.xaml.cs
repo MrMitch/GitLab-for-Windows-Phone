@@ -18,6 +18,8 @@ using Windows.UI.Xaml.Navigation;
 // Pour en savoir plus sur le modèle d’élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkID=390556
 using GitLab_for_Windows_Phone.Common;
 using GitLab_for_Windows_Phone.DesignData;
+using GitLab_for_Windows_Phone.Models;
+using GitLab_for_Windows_Phone.Services;
 using GitLab_for_Windows_Phone.ViewModels.Pages;
 using Newtonsoft.Json;
 
@@ -90,5 +92,11 @@ namespace GitLab_for_Windows_Phone.Pages
         }
 
         #endregion
+
+        private void IssuesListView_OnItemClick(object sender, ItemClickEventArgs e)
+        {
+            var issue = e.ClickedItem as Issue;
+            NavigationService.NavigateToIssue(issue.Id);
+        }
     }
 }
