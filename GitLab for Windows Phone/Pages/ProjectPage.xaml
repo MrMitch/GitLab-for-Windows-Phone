@@ -272,7 +272,9 @@
     <FlipView Background="White">
         <ListView Padding="0,0,0,20"
                   RequestedTheme="Light"
-                  ItemsSource="{Binding Commits}">
+                  ItemsSource="{Binding Commits}"
+                  IsItemClickEnabled="True"
+                  ItemClick="CommitsListView_OnItemClick">
         <ListView.Header>
             <StackPanel>
                     <TextBlock TextAlignment="Center"

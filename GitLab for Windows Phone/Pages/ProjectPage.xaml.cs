@@ -98,5 +98,11 @@ namespace GitLab_for_Windows_Phone.Pages
             var issue = e.ClickedItem as Issue;
             NavigationService.NavigateToIssue(issue.Id);
         }
+
+        private void CommitsListView_OnItemClick(object sender, ItemClickEventArgs e)
+        {
+            var commit = e.ClickedItem as Commit;
+            NavigationService.NavigateToCommit(commit.Id);
+        }
     }
 }

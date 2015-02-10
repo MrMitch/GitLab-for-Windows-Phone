@@ -48,5 +48,10 @@ namespace GitLab_for_Windows_Phone.Services
         {
             return Service.Frame.Navigate(typeof (IssuePage), issueId);
         }
+
+        public static bool NavigateToCommit(string commitId)
+        {
+            return Service.Frame.Navigate(typeof (CommitPage), commitId);
+        }
     }
 }

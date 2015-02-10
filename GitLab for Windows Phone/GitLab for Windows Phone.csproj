@@ -99,12 +99,16 @@
     <Compile Include="Models\Avatar.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\Commit.cs" />
+    <Compile Include="Models\Diff.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\Namespace.cs" />
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\Session.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Pages\CommitPage.xaml.cs">
+      <DependentUpon>CommitPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\IssuePage.xaml.cs">
       <DependentUpon>IssuePage.xaml</DependentUpon>
     </Compile>
@@ -117,6 +121,7 @@
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\BindableBase.cs" />
     <Compile Include="ViewModels\GroupViewModel.cs" />
+    <Compile Include="ViewModels\Pages\CommitPageViewModel.cs" />
     <Compile Include="ViewModels\Pages\HomePageViewModel.cs" />
     <Compile Include="ViewModels\Pages\IssuePageViewModel.cs" />
     <Compile Include="ViewModels\Pages\LoginPageViewModel.cs" />
@@ -163,6 +168,10 @@
     <PRIResource Include="Strings\fr-FR\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Pages\CommitPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\IssuePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -200,6 +209,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DesignData\samples\project.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DesignData\samples\commit.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
