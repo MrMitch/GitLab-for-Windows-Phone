@@ -5,31 +5,129 @@
     xmlns:local="using:GitLab_for_Windows_Phone.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
     mc:Ignorable="d"
     Background="{StaticResource DefaultColorBrush}"
     DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}">
 
-    <ScrollViewer ZoomMode="Disabled"
-                  IsHorizontalRailEnabled="False"
-                  HorizontalScrollMode="Disabled"
-                  HorizontalScrollBarVisibility="Disabled"
-                  IsVerticalRailEnabled="True"
-                  VerticalScrollMode="Auto"
-                  VerticalScrollBarVisibility="Auto"
-                  Background="White"
-                  RequestedTheme="Light">
-        <StackPanel>
-            
-            <TextBlock Text="{Binding Commit.Title}"
-                       TextWrapping="Wrap"
-                       Style="{StaticResource TitleTextBlockStyle}"/>
- 
-            <TextBlock Text="{Binding Commit.Description}"
-                       TextWrapping="Wrap" />
-            
-            <ItemsControl ItemsSource="{Binding Diffs}">
-            </ItemsControl>
-            
-        </StackPanel>
-    </ScrollViewer>
+    <Page.Resources>
+        <converters:LineTypeConverter x:Key="LineBackgroundConverter">
+            <converters:LineTypeConverter.AddedLineValue>
+                <SolidColorBrush Color="PaleGreen" />
+            </converters:LineTypeConverter.AddedLineValue>
+
+            <converters:LineTypeConverter.AreaInfoLineValue>
+                <SolidColorBrush Color="Transparent" />
+            </converters:LineTypeConverter.AreaInfoLineValue>
+
+            <converters:LineTypeConverter.RemovedLineValue>
+                <SolidColorBrush Color="Pink" />
+            </converters:LineTypeConverter.RemovedLineValue>
+
+            <converters:LineTypeConverter.UntouchedLineValue>
+                <SolidColorBrush Color="Transparent" />
+            </converters:LineTypeConverter.UntouchedLineValue>
+        </converters:LineTypeConverter>
+
+
+        <converters:LineTypeConverter x:Key="LineForegroundConverter">
+            <converters:LineTypeConverter.AddedLineValue>
+                <SolidColorBrush Color="Black" />
+            </converters:LineTypeConverter.AddedLineValue>
+
+            <converters:LineTypeConverter.AreaInfoLineValue>
+                <SolidColorBrush Color="DarkGray" />
+            </converters:LineTypeConverter.AreaInfoLineValue>
+
+            <converters:LineTypeConverter.RemovedLineValue>
+                <SolidColorBrush Color="Black" />
+            </converters:LineTypeConverter.RemovedLineValue>
+
+            <converters:LineTypeConverter.UntouchedLineValue>
+                <SolidColorBrush Color="Black" />
+            </converters:LineTypeConverter.UntouchedLineValue>
+        </converters:LineTypeConverter>
+        
+        <converters:DiffTypeConverter x:Key="DiffTypeConverter"
+                                      CreatedFileValue="&#xE109;"
+                                      RemovedFileValue="&#xE10A;"
+                                      EditedFileValue="&#xe1C2;" />
+    </Page.Resources>
+    
+    <Grid>
+        <ScrollViewer ZoomMode="Disabled"
+                      IsHorizontalRailEnabled="False"
+                      HorizontalScrollMode="Disabled"
+                      HorizontalScrollBarVisibility="Disabled"
+                      IsVerticalRailEnabled="True"
+                      VerticalScrollMode="Auto"
+                      VerticalScrollBarVisibility="Auto"
+                      Background="White"
+                      RequestedTheme="Light">
+            <StackPanel>
+
+                <StackPanel x:Name="HeaderStackPanel"
+                            Visibility="Collapsed">
+                    <TextBlock Text="{Binding Commit.Title}" 
+                               Margin="10"
+                               Foreground="{StaticResource DefaultColorBrush}"
+                               FontWeight="SemiLight"
+                               LineHeight="28"
+                               FontSize="28"
+                               TextWrapping="Wrap"
+                               Style="{StaticResource TitleTextBlockStyle}" />
+
+                    <TextBlock Text="{Binding Commit.Description}"
+                           Margin="10,0"
+                           TextWrapping="Wrap" />
+
+                    <TextBlock Margin="10,0">
+                        Par <Run FontWeight="SemiBold" Text="{Binding Commit.AuthorInfo}" />, le <Run Text="{Binding Commit.Date, Converter={StaticResource DateTimeConverter}, ConverterParameter='dd/MM/yyyy à HH:MM:ss'}" />
+                    </TextBlock>
+                    <TextBlock Text="{Binding Commit.Id}" Margin="10,0" />
+                </StackPanel>
+                <ItemsControl ItemsSource="{Binding Diffs}"
+                              x:Name="DiffsItemsControl"
+                              SizeChanged="FrameworkElement_OnSizeChanged"
+                              Margin="0,20">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,10">
+                                <TextBlock Margin="5, 2"
+                                           TextWrapping="Wrap"
+                                           Style="{StaticResource TitleTextBlockStyle}">
+                                    <Run FontSize="11" Foreground="LightGray" FontFamily="Segoe UI Symbol" Text="{Binding Type, Converter={StaticResource DiffTypeConverter}}" />
+                                    <Run Text="{Binding FileName}" />
+                                </TextBlock>
+
+                                <ScrollViewer IsHorizontalRailEnabled="True"
+                                              HorizontalScrollMode="Auto"
+                                              HorizontalScrollBarVisibility="Auto">
+                                    <ItemsControl ItemsSource="{Binding Lines}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border Background="{Binding Type, Converter={StaticResource LineBackgroundConverter}}">
+                                                    <TextBlock Text="{Binding Text}"
+                                                               FontSize="13"
+                                                               Foreground="{Binding Type, Converter={StaticResource LineForegroundConverter}}"
+                                                               FontFamily="/Assets/fonts/Consolas.ttf#Consolas" />
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </ScrollViewer>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+        <ProgressRing IsActive="True"
+                      Height="100"
+                      Width="100"
+                      Background="Transparent"
+                      x:Name="LoadingProgressRing"
+                      Foreground="{StaticResource DefaultColorBrush}"/>
+    </Grid>
+
 </Page>

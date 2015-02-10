@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -67,5 +68,17 @@ namespace GitLab_for_Windows_Phone.Pages
         }
 
         #endregion
+
+        private void FrameworkElement_OnSizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (e.NewSize.Height > Double.Epsilon && e.NewSize.Width > Double.Epsilon)
+            {
+                DiffsItemsControl.SizeChanged -= FrameworkElement_OnSizeChanged;
+
+                LoadingProgressRing.IsActive = false;
+                HeaderStackPanel.Visibility = Visibility.Visible;
+                LoadingProgressRing.Visibility = Visibility.Collapsed;
+            }
+        }
     }
 }

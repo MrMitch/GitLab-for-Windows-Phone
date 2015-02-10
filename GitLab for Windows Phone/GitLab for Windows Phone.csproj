@@ -95,11 +95,13 @@
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Converters\BooleanConverter.cs" />
     <Compile Include="Converters\DateTimeToStringConverter.cs" />
+    <Compile Include="Converters\DiffTypeConverter.cs" />
+    <Compile Include="Converters\LineTypeConverter.cs" />
     <Compile Include="DesignData\DesignHomePageViewModel.cs" />
     <Compile Include="Models\Avatar.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\Commit.cs" />
-    <Compile Include="Models\Diff.cs" />
+    <Compile Include="Models\FileDiff.cs" />
     <Compile Include="Models\Issue.cs" />
     <Compile Include="Models\Namespace.cs" />
     <Compile Include="Models\Note.cs" />
@@ -214,6 +216,7 @@
     <Content Include="DesignData\samples\commit.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\fonts\Consolas.ttf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
