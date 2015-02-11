@@ -22,12 +22,12 @@
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
         <m3:InitialRotationPreference>
           <m3:Rotation Preference="portrait" />
+          <m3:Rotation Preference="landscape" />
         </m3:InitialRotationPreference>
       </m3:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
-    <Capability Name="picturesLibrary" />
   </Capabilities>
 </Package>
