@@ -107,6 +107,7 @@
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\Session.cs" />
+    <Compile Include="Models\TreeElement.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Pages\CommitPage.xaml.cs">
       <DependentUpon>CommitPage.xaml</DependentUpon>
