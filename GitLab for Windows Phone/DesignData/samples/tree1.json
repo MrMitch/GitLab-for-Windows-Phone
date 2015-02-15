@@ -1,0 +1,62 @@
+﻿[
+    {
+        "id": "769cf940b0f0f6da1a3cdfc30b412d21f221df16",
+        "name": ".nuget",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "6439f43e2715e64d34f4b9b6c42581a65ccd9ff9",
+        "name": "AidaCorrex",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "499dac83b729e660e51523b7fdfe3fbb1c009fe4",
+        "name": "CodeParser",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "d476d122502b934f0e0716746e3a34d2cabdea8f",
+        "name": "DataAccessLayer",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "cb1565893e970b3720e9bc7b93d0045d2d8f8329",
+        "name": "JurisprudenceCrawler",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "85a193b1f8527c8e223ae9e3de4620bdde49d480",
+        "name": "ParserUtils",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "412eeda78dc9de1186c2e0e1526764af82ab3431",
+        "name": ".gitattributes",
+        "type": "blob",
+        "mode": "100644"
+    },
+    {
+        "id": "16ebd8a1a5d06eb1fea173bcdb8878e8bfa77a30",
+        "name": ".gitignore",
+        "type": "blob",
+        "mode": "100644"
+    },
+    {
+        "id": "20ace4873bec071832e8ab528d9d25009df11db3",
+        "name": "AidaCorrex.sln",
+        "type": "blob",
+        "mode": "100644"
+    },
+    {
+        "id": "89b3f872caadbaaf73beb1994fa82dad7c75ba3e",
+        "name": "AidaCorrex.sln.DotSettings",
+        "type": "blob",
+        "mode": "100644"
+    }
+]

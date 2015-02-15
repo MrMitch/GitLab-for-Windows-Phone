@@ -7,10 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:GitLab_for_Windows_Phone.ViewModels.Pages"
     xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
+    xmlns:controls="using:WinRTXamlToolkit.Controls"
+    xmlns:data="using:WinRTXamlToolkit.Controls.Data"
     mc:Ignorable="d"
     d:DataContext="{Binding Source={d:DesignData Source=/DesignData/samples/project.json, Type=viewModels:ProjectPageViewModel}}"
     DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}"
-    Background="{StaticResource DefaultColorBrush}">
+    Background="{StaticResource DefaultColorBrush}"
+    RequestedTheme="Light">
     
     <Page.Resources>
         <SolidColorBrush x:Key="ComboBoxBackgroundThemeBrush" Color="Transparent"/>
@@ -267,6 +270,12 @@
                 </StackPanel>
             </Grid>
         </DataTemplate>
+        
+        <converters:TreeElementTypeConverter x:Key="TreeElementTypeConverter"
+                                             FileValue="&#xe132;"
+                                             FolderValue="&#xe1C1;"
+                                             UnknownValue="&#xe18A;"/>
+
     </Page.Resources>
 
     <FlipView Background="White">

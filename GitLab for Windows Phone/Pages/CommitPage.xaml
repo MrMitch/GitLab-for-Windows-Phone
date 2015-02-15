@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:converters="using:GitLab_for_Windows_Phone.Converters"
+    xmlns:controls="using:WinRTXamlToolkit.Controls"
     mc:Ignorable="d"
     Background="{StaticResource DefaultColorBrush}"
     DataContext="{Binding ViewModel, RelativeSource={RelativeSource Self}}">
@@ -55,6 +56,7 @@
     </Page.Resources>
     
     <Grid>
+        
         <ScrollViewer ZoomMode="Disabled"
                       IsHorizontalRailEnabled="False"
                       HorizontalScrollMode="Disabled"

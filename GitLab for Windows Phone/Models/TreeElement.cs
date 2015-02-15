@@ -1,4 +1,6 @@
 ﻿using System.Runtime.Serialization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace GitLab_for_Windows_Phone.Models
 {
@@ -23,6 +25,7 @@ namespace GitLab_for_Windows_Phone.Models
         public string Name { get; set; }
 
         [DataMember(Name = "type")]
+        [JsonConverter(typeof(StringEnumConverter))]
         public TreeElementTypes Type { get; set; }
 
         [DataMember(Name = "mode")]

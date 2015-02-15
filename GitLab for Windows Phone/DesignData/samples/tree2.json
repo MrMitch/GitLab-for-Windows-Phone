@@ -1,0 +1,110 @@
+﻿[
+    {
+        "id": "0762b2bfb6aaf29245ede9a320d4e9684042cfc9",
+        "name": "Assets",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "820b69b8dfea8d331acb32c8d5a26e66b3507cd2",
+        "name": "Common",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "e6bf1c24fd58fec0002c6e8fa448d001116cbc84",
+        "name": "Converters",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "6c14e28867135890db2b8b068c08410ba7d5aba0",
+        "name": "Core",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "3c16e41642dbf4837132d06126835f0da29a640b",
+        "name": "DataTemplates",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "adacd941596094565bf1b2510039ccc643af98f4",
+        "name": "Models",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "6a633010e98b672806947e3d93d5b8a32c4abddb",
+        "name": "OcrResources",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "c3caa70511f7a0a42664391a37fdf81c484c3893",
+        "name": "Pages",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "1e8733071f8f8d21ae355bbdd7fa2789a6f3b33c",
+        "name": "Properties",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "8d5d0a305537412081ad0a64e3e30ce00940cebb",
+        "name": "Services",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "74ac670c431c9adcc0b8c1799394be0526e9b970",
+        "name": "StyleSelectors",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "0768fe701c7a4202fcbd911d028dc4c40bf9e25d",
+        "name": "ViewModels",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "b71f98df338682d713e8015cb9c791c19e28caea",
+        "name": "Xaml",
+        "type": "tree",
+        "mode": "040000"
+    },
+    {
+        "id": "de13f6425b4769335ec33c77d3f149aa00d6fa58",
+        "name": "AidaCorrex.csproj",
+        "type": "blob",
+        "mode": "100644"
+    },
+    {
+        "id": "098df92d4073ad4b187f4ba407541fde399f863d",
+        "name": "App.xaml",
+        "type": "blob",
+        "mode": "100644"
+    },
+    {
+        "id": "a085cd9cd0e0537b85d8281e6bd7dc2dfa9b2cf0",
+        "name": "App.xaml.cs",
+        "type": "blob",
+        "mode": "100644"
+    },
+    {
+        "id": "7cf0b89e29a1d6e1318f204fcf188c0d3bec4151",
+        "name": "Package.appxmanifest",
+        "type": "blob",
+        "mode": "100644"
+    },
+    {
+        "id": "13b172e378972c7e8bcc8f1f14588aa5531df78f",
+        "name": "packages.config",
+        "type": "blob",
+        "mode": "100644"
+    }
+]

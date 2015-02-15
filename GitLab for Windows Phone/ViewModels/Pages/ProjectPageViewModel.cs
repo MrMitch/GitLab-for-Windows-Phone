@@ -27,12 +27,15 @@ namespace GitLab_for_Windows_Phone.ViewModels.Pages
 
         public ObservableCollection<Issue> ClosedIssues { get; set; }
 
+        public ObservableCollection<TreeElementViewModel> Tree { get; set; }
+
         public ProjectPageViewModel()
         {
             Commits = new ObservableCollection<Commit>();
             Branches = new ObservableCollection<Branch>();
             OpenedIssues = new ObservableCollection<Issue>();
             ClosedIssues = new ObservableCollection<Issue>();
+            Tree = new ObservableCollection<TreeElementViewModel>();
         }
     }
 }

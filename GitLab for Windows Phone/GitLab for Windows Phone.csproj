@@ -97,6 +97,7 @@
     <Compile Include="Converters\DateTimeToStringConverter.cs" />
     <Compile Include="Converters\DiffTypeConverter.cs" />
     <Compile Include="Converters\LineTypeConverter.cs" />
+    <Compile Include="Converters\TreeElementTypeConverter.cs" />
     <Compile Include="DesignData\DesignHomePageViewModel.cs" />
     <Compile Include="Models\Avatar.cs" />
     <Compile Include="Models\Branch.cs" />
@@ -135,6 +136,7 @@
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\Pages\ProjectPageViewModel.cs" />
+    <Compile Include="ViewModels\TreeElementViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -206,6 +208,9 @@
     <Reference Include="System.Net.Http.Primitives">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\wpa81\System.Net.Http.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="WinRTXamlToolkit">
+      <HintPath>..\packages\WinRTXamlToolkit.WindowsPhone.1.8.1.0\lib\wpa\WinRTXamlToolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DesignData\samples\projects.json">
@@ -218,6 +223,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\fonts\Consolas.ttf" />
+    <Content Include="DesignData\samples\tree1.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DesignData\samples\tree2.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

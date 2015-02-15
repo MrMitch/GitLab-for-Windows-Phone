@@ -1,9 +1,6 @@
-﻿using System;
+﻿using System.Linq;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GitLab_for_Windows_Phone.Models
 {
@@ -46,7 +43,7 @@ namespace GitLab_for_Windows_Phone.Models
                     {
                         Type = LineTypes.Removed;
                     }
-                    else if (Text.StartsWith(AreaInfoLineStart) && Text.EndsWith(AreaInfoLineStart))
+                    else if (Text.StartsWith(AreaInfoLineDelimiter) && Text.EndsWith(AreaInfoLineDelimiter))
                     {
                         Type = LineTypes.AreaInfo;
                     }
@@ -103,7 +100,7 @@ namespace GitLab_for_Windows_Phone.Models
         [IgnoreDataMember]
         public string FileName { get { return WasDeleted ? OldPath : NewPath; } }
 
-        private const string AreaInfoLineStart = "@@";
+        private const string AreaInfoLineDelimiter = "@@";
         private const char NewLine = '\n';
 
         private List<Line> _lines;
